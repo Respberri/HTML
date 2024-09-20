@@ -47,6 +47,29 @@ body{
     justify-content: center;
 }
 
-.kurt{
+.my-uni{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
 
+.wrapper{
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+}
+
+.abt{  
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.abt{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
