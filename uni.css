@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.menu-bar{
+.menu-bar {
     background-color: #232935;
     height: 80px;
     width: 100%;
@@ -18,33 +18,59 @@ body{
     padding: 0 5%;
 }
 
-.grp-num{
+.grp-num {
     color: white;
     font-size: 30px;
 }
 
-.menu-bar ul{
+.menu-bar ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center; 
-    flex-grow: 1;
+    align-items: center;
 }
 
-.menu-bar ul li{
-    padding: 10px 30px;
+.menu-bar ul li {
+    position: relative;
 }
 
-.menu-bar ul li a{
+.menu-bar ul li a {
+    color: white;
+    display: block;
+    padding: 20px 25px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-bar ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the parent item */
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: #232935;
+    z-index: 999;
+}
+
+.menu-bar ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    text-align: left;
 }
 
-.grp{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+.dropdown li a:hover {
+    background-color: #333;
 }
 
 .my-uni{
